@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './img/flooop.png';
 import './App.css';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Carousel } from 'react-bootstrap';
+import { Navbar, Card, Nav, NavDropdown, Form, FormControl, Button, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css'
-import SliceImg1 from "./img/images.jpg"
-import SliceImg2 from "./img/cach-chup-anh-san-pham-co-concept-758x400.jpg";
-import SliceImg3 from "./img/chup-anh-san-pham-chuyen-nghiep-hoi-an-2.jpg";
+import SliceImg1 from "./img/1.jpg"
+import SliceImg2 from "./img/2.jpg";
+import SliceImg3 from "./img/3.jpg";
+import CardImg from "./img/4.png"
 
 const App = (props) => {
   return (
@@ -34,10 +35,13 @@ const App = (props) => {
               </Form>
             </Navbar.Collapse>
           </Navbar>
+        </div>
+      </header>
+      <body>
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100 StyleImg"
+                className="d-block w-100"
                 src={SliceImg1}
                 alt="First slide"
               />
@@ -48,7 +52,7 @@ const App = (props) => {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 StyleImg"
+                className="d-block w-100"
                 src={SliceImg2}
                 alt="Third slide"
               />
@@ -60,7 +64,7 @@ const App = (props) => {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100 StyleImg"
+                className="d-block w-100"
                 src={SliceImg3}
                 alt="Third slide"
               />
@@ -71,8 +75,32 @@ const App = (props) => {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-        </div>
-      </header>
+          <div className="item">
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={CardImg} />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={CardImg} />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+            
+          </div>
+      </body>
   </div> 
   )   
 }

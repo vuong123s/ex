@@ -1,4 +1,25 @@
 .App img{
     width: 85px;
-    margin: 0px 20px;
+}
+
+.w-100 {
+    width: 100%!important;
+    height: 500px;
+}
+
+.carousel-inner{
+    width: 100%!important;
+}
+
+.carousel{
+    width: 90%!important;
+    margin: 0 auto;
+}
+
+.item{
+    display: flex;
+}
+
+.card{
+    width: 300px!important;
 }
