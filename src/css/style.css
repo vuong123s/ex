@@ -18,8 +18,17 @@
 
 .item{
     display: flex;
+    margin: 50px 100px;
 }
 
 .card{
-    width: 300px!important;
+    width: 100px!important;
+}
+
+.h5{
+    font-size: 13px;
+}
+
+.card-img-top{
+    width: 100%!important;
 }
